@@ -1,0 +1,21 @@
+{
+    "aps": {
+        "alert": "START DESIGNING APPS FOR APPLE WATCH",
+        "title": "",
+        "category": "News"
+    },
+    
+    "WatchKit Simulator Actions": [
+                                   {
+                                   "title": "Read full text",
+                                   "identifier": "readNewsText"
+                                   },
+                                   {
+                                   "title": "Open in iPhone",
+                                   "identifier": "open"
+                                   
+                                   }
+                                   ],
+    
+    "customKey": "NEWS"
+}

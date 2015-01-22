@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Yr8-Fj-TBx">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3734"/>
+    </dependencies>
+    <scenes>
+        <!--Settings-->
+        <scene sceneID="Db6-sn-vQ7">
+            <objects>
+                <controller title="Settings" id="Yr8-Fj-TBx" customClass="MenuInterfaceController" customModule="WatchKitTableDemo_WatchKit_Extension">
+                    <items>
+                        <group width="131" alignment="left" hasDetent="YES" id="JDd-TW-g8M">
+                            <items>
+                                <button alignment="left" backgroundImage="Message_button" id="lOO-2n-ZG6"/>
+                                <button alignment="right" backgroundImage="market_button" id="ANc-ZG-dxk"/>
+                            </items>
+                        </group>
+                        <group width="1" height="20" alignment="left" hasDetent="YES" id="5Z1-5t-NJp">
+                            <items>
+                                <label alignment="left" text="Message" id="Eai-Xc-dZP"/>
+                                <label alignment="right" text="Market" id="pYq-ao-ZkH"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" hasDetent="YES" id="Q7w-74-VWj">
+                            <items>
+                                <button alignment="left" backgroundImage="news_button" id="O1j-TM-bkj"/>
+                                <button alignment="right" backgroundImage="settings_button" id="0Ht-WO-T42">
+                                    <connections>
+                                        <action selector="SettingsTriggered" destination="Yr8-Fj-TBx" id="51A-KG-EIS"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" hasDetent="YES" id="k86-1J-QvO">
+                            <items>
+                                <label alignment="left" text="News" id="5Ob-It-9LI"/>
+                                <label alignment="right" text="Settings" id="4js-Vy-BMX"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="82" y="-346"/>
+        </scene>
+        <!--settingsScreen-->
+        <scene sceneID="lu3-hD-peF">
+            <objects>
+                <controller identifier="settingsScreen" id="FZt-dW-CI1">
+                    <items>
+                        <switch width="1" alignment="left" value="YES" id="7J9-P4-eyk">
+                            <string key="title">Chat
+Status</string>
+                        </switch>
+                        <switch width="1" alignment="left" id="I11-oB-Yzf">
+                            <string key="title">Manage
+Alert</string>
+                        </switch>
+                        <switch width="1" alignment="left" value="YES" title="Auto Sign In" id="27a-en-mfN"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="285" y="-358"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchKitTableDemo_Watch_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" layout="vertical" id="eac-bO-6A0">
+                            <items>
+                                <tableRow identifier="MenuTableRowController" id="nHu-mO-YbL" customClass="MenuTableRowController" customModule="WatchKitTableDemo_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="49" alignment="center" id="zB5-Ie-NC4">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="1" numberOfLines="0" id="NF5-Kd-az3">
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="47"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="interfaceLabel" destination="NF5-Kd-az3" id="XRS-vK-Xtk"/>
+                                        <segue destination="ndD-KH-JR7" kind="push" id="qEh-ag-m0y"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="menuTable" destination="eac-bO-6A0" id="q5L-30-RoQ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="235" y="-115"/>
+        </scene>
+        <!--Menu Detail Interface Controller-->
+        <scene sceneID="PzE-uC-KRw">
+            <objects>
+                <controller id="ndD-KH-JR7" customClass="MenuDetailInterfaceController" customModule="WatchKitTableDemo_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Label" id="iPT-ba-66g"/>
+                        <switch width="1" alignment="left" value="YES" title="On/Off" id="ONE-8o-RcP"/>
+                    </items>
+                    <color key="backgroundColor" red="0.77180281929347827" green="0.77180281929347827" blue="0.77180281929347827" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="interfaceLabel" destination="iPT-ba-66g" id="7dY-C3-ARn"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="435" y="-115.25"/>
+        </scene>
+        <!--Messenger Sent Controller-->
+        <scene sceneID="DKg-ih-uGv">
+            <objects>
+                <controller id="Xxv-CR-eQw" customClass="MessengerSentController" customModule="WatchKitTableDemo_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="105" alignment="left" backgroundImage="MessegeSentBack" hasDetent="YES" id="bKB-6U-y0b">
+                            <items>
+                                <label width="124" height="108" alignment="right" text="Your message has been sent" textAlignment="left" numberOfLines="2" id="utu-zX-CSf"/>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Dismiss" id="Xsp-q3-O8X">
+                            <connections>
+                                <action selector="OnPressed" destination="Xxv-CR-eQw" id="SdU-Z7-QQn"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="429" y="143"/>
+        </scene>
+        <!--messengerSelect-->
+        <scene sceneID="yuU-Ue-z2x">
+            <objects>
+                <controller identifier="messengerSelect" id="gz6-cr-UrF" customClass="MessengerController" customModule="WatchKitTableDemo_WatchKit_Extension">
+                    <items>
+                        <group width="136" height="39" alignment="left" backgroundImage="MessegeBackground" hasDetent="YES" id="Nel-TD-PjB">
+                            <items>
+                                <button width="128" alignment="right" title="Sorry, I can’t talk now. I'll call back" id="P2W-r7-alw">
+                                    <connections>
+                                        <segue destination="Xxv-CR-eQw" kind="push" id="AlC-Ct-tu7"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="136" height="42" alignment="left" backgroundImage="MessegeBackground" hasDetent="YES" id="P1y-aN-0hb">
+                            <items>
+                                <button width="128" alignment="right" title="I’m driving. I will call you back later." id="D5f-44-UU4">
+                                    <connections>
+                                        <segue destination="Xxv-CR-eQw" kind="push" id="8er-oK-oL7"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="42" alignment="left" backgroundImage="MessegeBackground" hasDetent="YES" id="eO4-KA-qnv">
+                            <items>
+                                <button width="128" alignment="right" title="Don't write me anymore." id="5gA-B0-aiD">
+                                    <connections>
+                                        <segue destination="Xxv-CR-eQw" kind="push" id="2sn-Oo-8lR"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <imageView width="51" height="51" alignment="center" image="closeImage" id="9OB-NR-mcU"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="224" y="160.5"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="dNA-Bc-hI7">
+            <objects>
+                <notificationController id="Lk9-tq-uhK">
+                    <items>
+                        <label alignment="left" text="News" id="scZ-Dr-Ubt"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="News" offsetNotificationContent="NO" id="1pl-du-zFz"/>
+                    <color key="backgroundColor" red="1" green="0.52345767239862506" blue="0.0027472579380547479" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="scZ-Dr-Ubt" id="H5g-MQ-vpi"/>
+                        <segue destination="TDL-5k-CZZ" kind="relationship" relationship="dynamicNotificationInterface" id="emE-9g-YRc"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="48" y="703"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="Alf-kf-yG0">
+            <objects>
+                <notificationController id="Oq5-2l-KXk">
+                    <items>
+                        <label alignment="left" text="Market" id="X93-fW-Bdg"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="Market" offsetNotificationContent="NO" id="J3W-fh-Fa1"/>
+                    <color key="backgroundColor" red="1" green="0.63376408080000002" blue="0.100033547" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="X93-fW-Bdg" id="eM4-Ep-fKw"/>
+                        <segue destination="CAD-cg-0p3" kind="relationship" relationship="dynamicNotificationInterface" id="4Eu-TD-Tif"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="48" y="960"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="HLm-c7-BVS">
+            <objects>
+                <notificationController id="3Sq-be-O5v">
+                    <items>
+                        <label alignment="left" text="Messenger" id="3kM-ZY-W6S"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="Messenger" offsetNotificationContent="NO" id="5gM-dA-hY2"/>
+                    <color key="backgroundColor" red="1" green="0.63376408080000002" blue="0.100033547" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="3kM-ZY-W6S" id="3mF-pV-GDm"/>
+                        <segue destination="OJ0-f9-yRD" kind="relationship" relationship="dynamicNotificationInterface" id="EaW-KP-79T"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="54" y="1204"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="eGj-8b-d7C">
+            <objects>
+                <notificationController id="JBe-A4-KU9">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="sGY-zs-QTz"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" offsetNotificationContent="NO" id="8mt-hg-fnn"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="sGY-zs-QTz" id="laQ-0g-hlh"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="54" y="1433"/>
+        </scene>
+        <!--readFullText-->
+        <scene sceneID="Vh3-iN-TdI">
+            <objects>
+                <controller identifier="readFullText" backgroundImage="NewsNotificationImage" id="gkb-t8-dCj" customClass="FullNewsInterfaceController" customModule="WatchKitTableDemo_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" hasDetent="YES" id="Btp-KC-HYM">
+                            <items>
+                                <imageView width="30" alignment="left" id="t8F-sF-hzf"/>
+                                <label width="101" height="34" alignment="left" text="Eikon News" textAlignment="right" id="030-t4-QBi">
+                                    <color key="textColor" red="1" green="0.63376408080000002" blue="0.100033547" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label width="136" height="59" alignment="left" text="Start Designing Apps for Apple Watch " numberOfLines="0" id="iYW-1m-51v">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label width="136" alignment="left" text="11 Dec. 2014  10:01" id="YuT-hR-71i">
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <label alignment="left" numberOfLines="0" id="1WE-Nv-Rr5">
+                            <string key="text">Developers can create notifications that allow users to take action or get information about what happened in usuall world and many other usefull words</string>
+                        </label>
+                        <button width="1" alignment="left" title="Read in the iPhone" id="jdP-wi-xrr"/>
+                        <button width="1" alignment="left" title="Dismiss" id="bT1-BY-C8l">
+                            <connections>
+                                <action selector="onDismiss" destination="gkb-t8-dCj" id="kLM-rQ-iRn"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="48" y="270"/>
+        </scene>
+        <!--NewsNotificationImage-->
+        <scene sceneID="hK4-M3-PFh">
+            <objects>
+                <controller backgroundImage="NewsNotificationImage" contentMode="scaleAspectFill" id="TDL-5k-CZZ" customClass="NewsNotificationController" customModule="WatchKitTableDemo_WatchKit_Extension">
+                    <items>
+                        <imageView width="136" height="70" alignment="left" hidden="YES" image="NewsNotificationImage" contentMode="scaleAspectFill" id="Je5-oY-8Ux"/>
+                        <label width="136" height="34" alignment="left" id="vB5-2P-2ur"/>
+                        <label width="136" height="59" alignment="left" text="Start Designing Apps for Apple Watch " numberOfLines="0" id="Yxb-E6-Njn">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label width="136" alignment="left" text="11 Dec. 2014  10:01" id="q5r-br-oZ6">
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <label alignment="left" text="Developers can create notifications that allow users to take action or get information about what happened in usuall world" numberOfLines="6" id="XkA-6F-hhC"/>
+                    </items>
+                    <color key="backgroundColor" red="1" green="0.6337640807597904" blue="0.1000335469627639" alpha="1" colorSpace="calibratedRGB"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="460" y="702.25"/>
+        </scene>
+        <!--News Notification Controller-->
+        <scene sceneID="scc-qn-dSM">
+            <objects>
+                <controller id="CAD-cg-0p3" customClass="NewsNotificationController" customModule="WatchKitTableDemo_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" backgroundImage="greyBack" hasDetent="YES" id="4bs-h6-Rxj">
+                            <items>
+                                <label width="136" alignment="left" text="Open:             36.65" textAlignment="justified" id="ske-0Z-MGh"/>
+                            </items>
+                        </group>
+                        <label width="136" alignment="left" text="Close:             54.76" textAlignment="justified" id="2i6-qD-nje"/>
+                        <group width="1" alignment="left" backgroundImage="greyBack" hasDetent="YES" id="sE7-ty-zXf">
+                            <items>
+                                <label width="136" alignment="left" text="High:              34.98" textAlignment="justified" id="QfN-30-Zem"/>
+                            </items>
+                        </group>
+                        <label width="136" alignment="left" text="Low:                32.21" id="IH2-Oz-FUw"/>
+                        <group width="1" alignment="left" backgroundImage="greyBack" hasDetent="YES" id="bFB-dM-uhx">
+                            <items>
+                                <label width="136" alignment="left" text="Volume            1322" id="0QE-bc-0rI"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="254" y="960"/>
+        </scene>
+        <!--News Notification Controller-->
+        <scene sceneID="mcQ-Lo-GLY">
+            <objects>
+                <controller id="OJ0-f9-yRD" customClass="NewsNotificationController" customModule="WatchKitTableDemo_WatchKit_Extension">
+                    <items>
+                        <label width="136" height="25" alignment="left" text="PAUL DONCASTER" numberOfLines="0" id="bf3-tV-2NN">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label width="136" alignment="left" text="20 MINUTES AGO" id="G2d-wY-S9Y">
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <label alignment="left" text="Favorite Time of Year - Tyler Straub. Did you heard this melody?" numberOfLines="6" id="KTh-0g-0cg"/>
+                        <label alignment="left" text="youtube.be/DDVKSD232" id="Rs2-fU-oTj">
+                            <color key="textColor" red="0.13022584244184041" green="0.51191188417436773" blue="0.91835088315217395" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="260" y="1204"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="AlC-Ct-tu7"/>
+    </inferredMetricsTieBreakers>
+</document>
