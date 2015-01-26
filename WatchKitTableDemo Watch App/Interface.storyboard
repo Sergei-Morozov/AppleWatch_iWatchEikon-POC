@@ -10,10 +10,10 @@
             <objects>
                 <controller title="Settings" id="Yr8-Fj-TBx" customClass="MenuInterfaceController" customModule="WatchKitTableDemo_WatchKit_Extension">
                     <items>
-                        <group width="131" alignment="left" hasDetent="YES" id="JDd-TW-g8M">
+                        <group width="1" alignment="left" hasDetent="YES" id="JDd-TW-g8M">
                             <items>
-                                <button alignment="left" backgroundImage="Message_button" id="lOO-2n-ZG6"/>
-                                <button alignment="right" backgroundImage="market_button" id="ANc-ZG-dxk"/>
+                                <button width="69" height="62" alignment="left" backgroundImage="Message_button" id="lOO-2n-ZG6"/>
+                                <button width="61" height="63" alignment="right" backgroundImage="market_button" id="ANc-ZG-dxk"/>
                             </items>
                         </group>
                         <group width="1" height="20" alignment="left" hasDetent="YES" id="5Z1-5t-NJp">
@@ -24,8 +24,8 @@
                         </group>
                         <group width="1" alignment="left" hasDetent="YES" id="Q7w-74-VWj">
                             <items>
-                                <button alignment="left" backgroundImage="news_button" id="O1j-TM-bkj"/>
-                                <button alignment="right" backgroundImage="settings_button" id="0Ht-WO-T42">
+                                <button width="62" height="63" alignment="left" backgroundImage="news_button" id="O1j-TM-bkj"/>
+                                <button width="64" height="63" alignment="right" backgroundImage="settings_button" id="0Ht-WO-T42">
                                     <connections>
                                         <action selector="SettingsTriggered" destination="Yr8-Fj-TBx" id="51A-KG-EIS"/>
                                     </connections>
@@ -41,7 +41,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="82" y="-346"/>
+            <point key="canvasLocation" x="82" y="-344.5"/>
         </scene>
         <!--settingsScreen-->
         <scene sceneID="lu3-hD-peF">
@@ -117,7 +117,7 @@ Alert</string>
                     <items>
                         <group width="1" height="105" alignment="left" backgroundImage="MessegeSentBack" hasDetent="YES" id="bKB-6U-y0b">
                             <items>
-                                <label width="124" height="108" alignment="right" text="Your message has been sent" textAlignment="left" numberOfLines="2" id="utu-zX-CSf"/>
+                                <label width="1" widthAdjustment="-8" height="1" alignment="right" text="Your message has been sent" textAlignment="left" numberOfLines="2" id="utu-zX-CSf"/>
                             </items>
                         </group>
                         <button width="1" alignment="left" title="Dismiss" id="Xsp-q3-O8X">
@@ -135,27 +135,42 @@ Alert</string>
             <objects>
                 <controller identifier="messengerSelect" id="gz6-cr-UrF" customClass="MessengerController" customModule="WatchKitTableDemo_WatchKit_Extension">
                     <items>
-                        <group width="136" height="39" alignment="left" backgroundImage="MessegeBackground" hasDetent="YES" id="Nel-TD-PjB">
+                        <group width="1" height="39" alignment="left" hasDetent="YES" id="Nel-TD-PjB">
                             <items>
-                                <button width="128" alignment="right" title="Sorry, I can’t talk now. I'll call back" id="P2W-r7-alw">
+                                <button alignment="left" id="P2W-r7-alw">
+                                    <group key="contentGroup" width="1" height="1" alignment="left" backgroundImage="MessegeBackground" id="dAf-8N-cnz">
+                                        <items>
+                                            <label width="1" widthAdjustment="-10" height="1" alignment="right" text="Sorry, I can’t talk now. I'll call back" numberOfLines="2" id="RVC-tW-W8r"/>
+                                        </items>
+                                    </group>
                                     <connections>
                                         <segue destination="Xxv-CR-eQw" kind="push" id="AlC-Ct-tu7"/>
                                     </connections>
                                 </button>
                             </items>
                         </group>
-                        <group width="136" height="42" alignment="left" backgroundImage="MessegeBackground" hasDetent="YES" id="P1y-aN-0hb">
+                        <group width="1" height="42" alignment="left" hasDetent="YES" id="P1y-aN-0hb">
                             <items>
-                                <button width="128" alignment="right" title="I’m driving. I will call you back later." id="D5f-44-UU4">
+                                <button alignment="left" id="D5f-44-UU4">
+                                    <group key="contentGroup" width="1" height="1" alignment="left" backgroundImage="MessegeBackground" id="hkH-9H-hWh">
+                                        <items>
+                                            <label width="1" widthAdjustment="-10" height="1" alignment="right" text="I’m driving. I will call you back later." numberOfLines="2" id="8Ex-oK-lPp"/>
+                                        </items>
+                                    </group>
                                     <connections>
                                         <segue destination="Xxv-CR-eQw" kind="push" id="8er-oK-oL7"/>
                                     </connections>
                                 </button>
                             </items>
                         </group>
-                        <group width="1" height="42" alignment="left" backgroundImage="MessegeBackground" hasDetent="YES" id="eO4-KA-qnv">
+                        <group width="1" height="42" alignment="left" hasDetent="YES" id="eO4-KA-qnv">
                             <items>
-                                <button width="128" alignment="right" title="Don't write me anymore." id="5gA-B0-aiD">
+                                <button alignment="left" id="5gA-B0-aiD">
+                                    <group key="contentGroup" width="1" height="1" alignment="left" backgroundImage="MessegeBackground" id="wwl-XU-nZm">
+                                        <items>
+                                            <label width="1" widthAdjustment="-10" height="1" alignment="right" text="Don't write me anymore." numberOfLines="2" id="BTZ-NC-3Vk"/>
+                                        </items>
+                                    </group>
                                     <connections>
                                         <segue destination="Xxv-CR-eQw" kind="push" id="2sn-Oo-8lR"/>
                                     </connections>

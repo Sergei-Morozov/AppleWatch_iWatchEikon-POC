@@ -1,14 +1,15 @@
+
 {
     "aps": {
         "alert": "START DESIGNING APPS FOR APPLE WATCH",
         "title": "",
-        "category": "News"
+        "category": "Messenger"
     },
     
     "WatchKit Simulator Actions": [
                                    {
-                                   "title": "Read full text",
-                                   "identifier": "readNewsText"
+                                   "title": "Reply with template",
+                                   "identifier": "replyMessenger"
                                    },
                                    {
                                    "title": "Open in iPhone",
@@ -17,5 +18,5 @@
                                    }
                                    ],
     
-    "customKey": "NEWS"
+    "customKey": "MESSENGER"
 }
