@@ -12,9 +12,12 @@ class MenuDetailInterfaceController: WKInterfaceController {
     
     @IBOutlet weak var interfaceLabel: WKInterfaceLabel!
     
+    override init!() {
+        super.init();
+    }
     
-    override init(context: AnyObject?) {
-        super.init(context: context)
+    override func awakeWithContext(context: AnyObject?) {
+        super.awakeWithContext(context)
         
         if let menuName = context as? String {
             interfaceLabel.setText(menuName)

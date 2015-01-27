@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Yr8-Fj-TBx">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Yr8-Fj-TBx">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3734"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
     </dependencies>
     <scenes>
         <!--Settings-->
@@ -10,29 +10,34 @@
             <objects>
                 <controller title="Settings" id="Yr8-Fj-TBx" customClass="MenuInterfaceController" customModule="WatchKitTableDemo_WatchKit_Extension">
                     <items>
-                        <group width="1" alignment="left" hasDetent="YES" id="JDd-TW-g8M">
+                        <group width="1" alignment="left" id="JDd-TW-g8M">
                             <items>
                                 <button width="69" height="62" alignment="left" backgroundImage="Message_button" id="lOO-2n-ZG6"/>
                                 <button width="61" height="63" alignment="right" backgroundImage="market_button" id="ANc-ZG-dxk"/>
                             </items>
                         </group>
-                        <group width="1" height="20" alignment="left" hasDetent="YES" id="5Z1-5t-NJp">
+                        <group width="1" height="20" alignment="left" id="5Z1-5t-NJp">
                             <items>
                                 <label alignment="left" text="Message" id="Eai-Xc-dZP"/>
                                 <label alignment="right" text="Market" id="pYq-ao-ZkH"/>
                             </items>
                         </group>
-                        <group width="1" alignment="left" hasDetent="YES" id="Q7w-74-VWj">
+                        <group width="1" alignment="left" id="Q7w-74-VWj">
                             <items>
-                                <button width="62" height="63" alignment="left" backgroundImage="news_button" id="O1j-TM-bkj"/>
+                                <button width="62" height="63" alignment="left" backgroundImage="news_button" id="O1j-TM-bkj">
+                                    <connections>
+                                        <segue destination="QtZ-tn-za3" kind="push" id="p0e-6R-nzb"/>
+                                    </connections>
+                                </button>
                                 <button width="64" height="63" alignment="right" backgroundImage="settings_button" id="0Ht-WO-T42">
                                     <connections>
                                         <action selector="SettingsTriggered" destination="Yr8-Fj-TBx" id="51A-KG-EIS"/>
+                                        <segue destination="FZt-dW-CI1" kind="push" id="EYG-I0-dmP"/>
                                     </connections>
                                 </button>
                             </items>
                         </group>
-                        <group width="1" alignment="left" hasDetent="YES" id="k86-1J-QvO">
+                        <group width="1" alignment="left" id="k86-1J-QvO">
                             <items>
                                 <label alignment="left" text="News" id="5Ob-It-9LI"/>
                                 <label alignment="right" text="Settings" id="4js-Vy-BMX"/>
@@ -60,17 +65,17 @@ Alert</string>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="285" y="-358"/>
+            <point key="canvasLocation" x="311" y="-344"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchKitTableDemo_Watch_App" customModuleProvider="target">
                     <items>
-                        <table alignment="left" layout="vertical" id="eac-bO-6A0">
+                        <table alignment="left" id="eac-bO-6A0">
                             <items>
                                 <tableRow identifier="MenuTableRowController" id="nHu-mO-YbL" customClass="MenuTableRowController" customModule="WatchKitTableDemo_WatchKit_Extension">
-                                    <group key="rootItem" width="1" height="49" alignment="center" id="zB5-Ie-NC4">
+                                    <group key="rootItem" width="1" height="49" alignment="left" id="zB5-Ie-NC4">
                                         <items>
                                             <label alignment="left" verticalAlignment="center" text="1" numberOfLines="0" id="NF5-Kd-az3">
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -110,12 +115,69 @@ Alert</string>
             </objects>
             <point key="canvasLocation" x="435" y="-115.25"/>
         </scene>
+        <!--News Table View Controller-->
+        <scene sceneID="W4T-WC-qQV">
+            <objects>
+                <controller id="QtZ-tn-za3" customClass="NewsTableViewController" customModule="WatchKitTableDemo_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="AQa-Ny-3FV">
+                            <items>
+                                <tableRow identifier="newsrow" id="LaI-zP-k8Z" customClass="NewsRow" customModule="WatchKitTableDemo_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="1Qj-Vk-FH2">
+                                        <items>
+                                            <label width="1" alignment="left" text="News" numberOfLines="0" id="YEI-Q2-6Rn"/>
+                                            <group width="1" widthAdjustment="-4" alignment="left" id="PBe-nh-YbY">
+                                                <items>
+                                                    <imageView width="14" height="14" alignment="right" verticalAlignment="center" id="qbj-SU-ZTt"/>
+                                                    <label alignment="left" verticalAlignment="center" text="11:00 AM" id="wEy-4i-d0b">
+                                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                        </items>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="contentLabel" destination="YEI-Q2-6Rn" id="M9l-G6-3PI"/>
+                                        <outlet property="dateLabel" destination="wEy-4i-d0b" id="l4g-bU-xnu"/>
+                                        <outlet property="indicator" destination="qbj-SU-ZTt" id="IJg-Rg-06k"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <menu key="menu" id="Bu4-Fx-FIp">
+                        <items>
+                            <menuItem title="Add to Briefcase" icon="add" id="5dj-Md-fj2">
+                                <connections>
+                                    <action selector="addToBriefcase" destination="QtZ-tn-za3" id="xo2-bO-wdY"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Open in iPhone" icon="accept" id="3vJ-pD-U3c">
+                                <connections>
+                                    <action selector="openInIphone" destination="QtZ-tn-za3" id="Hp6-J1-J4J"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Cancel" icon="decline" id="RS4-EY-yLH">
+                                <connections>
+                                    <action selector="cancel" destination="QtZ-tn-za3" id="jLK-T0-XLO"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="table" destination="AQa-Ny-3FV" id="Ero-SA-MRy"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="831" y="5"/>
+        </scene>
         <!--Messenger Sent Controller-->
         <scene sceneID="DKg-ih-uGv">
             <objects>
                 <controller id="Xxv-CR-eQw" customClass="MessengerSentController" customModule="WatchKitTableDemo_WatchKit_Extension">
                     <items>
-                        <group width="1" height="105" alignment="left" backgroundImage="MessegeSentBack" hasDetent="YES" id="bKB-6U-y0b">
+                        <group width="1" height="105" alignment="left" backgroundImage="MessegeSentBack" id="bKB-6U-y0b">
                             <items>
                                 <label width="1" widthAdjustment="-8" height="1" alignment="right" text="Your message has been sent" textAlignment="left" numberOfLines="2" id="utu-zX-CSf"/>
                             </items>
@@ -135,7 +197,7 @@ Alert</string>
             <objects>
                 <controller identifier="messengerSelect" id="gz6-cr-UrF" customClass="MessengerController" customModule="WatchKitTableDemo_WatchKit_Extension">
                     <items>
-                        <group width="1" height="39" alignment="left" hasDetent="YES" id="Nel-TD-PjB">
+                        <group width="1" height="39" alignment="left" id="Nel-TD-PjB">
                             <items>
                                 <button alignment="left" id="P2W-r7-alw">
                                     <group key="contentGroup" width="1" height="1" alignment="left" backgroundImage="MessegeBackground" id="dAf-8N-cnz">
@@ -149,7 +211,7 @@ Alert</string>
                                 </button>
                             </items>
                         </group>
-                        <group width="1" height="42" alignment="left" hasDetent="YES" id="P1y-aN-0hb">
+                        <group width="1" height="42" alignment="left" id="P1y-aN-0hb">
                             <items>
                                 <button alignment="left" id="D5f-44-UU4">
                                     <group key="contentGroup" width="1" height="1" alignment="left" backgroundImage="MessegeBackground" id="hkH-9H-hWh">
@@ -163,7 +225,7 @@ Alert</string>
                                 </button>
                             </items>
                         </group>
-                        <group width="1" height="42" alignment="left" hasDetent="YES" id="eO4-KA-qnv">
+                        <group width="1" height="42" alignment="left" id="eO4-KA-qnv">
                             <items>
                                 <button alignment="left" id="5gA-B0-aiD">
                                     <group key="contentGroup" width="1" height="1" alignment="left" backgroundImage="MessegeBackground" id="wwl-XU-nZm">
@@ -254,7 +316,7 @@ Alert</string>
             <objects>
                 <controller identifier="readFullText" backgroundImage="NewsNotificationImage" id="gkb-t8-dCj" customClass="FullNewsInterfaceController" customModule="WatchKitTableDemo_WatchKit_Extension">
                     <items>
-                        <group width="1" alignment="left" hasDetent="YES" id="Btp-KC-HYM">
+                        <group width="1" alignment="left" id="Btp-KC-HYM">
                             <items>
                                 <imageView width="30" alignment="left" id="t8F-sF-hzf"/>
                                 <label width="101" height="34" alignment="left" text="Eikon News" textAlignment="right" id="030-t4-QBi">
@@ -307,19 +369,19 @@ Alert</string>
             <objects>
                 <controller id="CAD-cg-0p3" customClass="NewsNotificationController" customModule="WatchKitTableDemo_WatchKit_Extension">
                     <items>
-                        <group width="1" alignment="left" backgroundImage="greyBack" hasDetent="YES" id="4bs-h6-Rxj">
+                        <group width="1" alignment="left" backgroundImage="greyBack" id="4bs-h6-Rxj">
                             <items>
                                 <label width="136" alignment="left" text="Open:             36.65" textAlignment="justified" id="ske-0Z-MGh"/>
                             </items>
                         </group>
                         <label width="136" alignment="left" text="Close:             54.76" textAlignment="justified" id="2i6-qD-nje"/>
-                        <group width="1" alignment="left" backgroundImage="greyBack" hasDetent="YES" id="sE7-ty-zXf">
+                        <group width="1" alignment="left" backgroundImage="greyBack" id="sE7-ty-zXf">
                             <items>
                                 <label width="136" alignment="left" text="High:              34.98" textAlignment="justified" id="QfN-30-Zem"/>
                             </items>
                         </group>
                         <label width="136" alignment="left" text="Low:                32.21" id="IH2-Oz-FUw"/>
-                        <group width="1" alignment="left" backgroundImage="greyBack" hasDetent="YES" id="bFB-dM-uhx">
+                        <group width="1" alignment="left" backgroundImage="greyBack" id="bFB-dM-uhx">
                             <items>
                                 <label width="136" alignment="left" text="Volume            1322" id="0QE-bc-0rI"/>
                             </items>
@@ -351,6 +413,6 @@ Alert</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="AlC-Ct-tu7"/>
+        <segue reference="2sn-Oo-8lR"/>
     </inferredMetricsTieBreakers>
 </document>

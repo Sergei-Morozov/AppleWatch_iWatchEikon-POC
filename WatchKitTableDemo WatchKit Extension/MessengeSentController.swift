@@ -12,15 +12,15 @@ import WatchKit
 
 class MessengerSentController: WKInterfaceController {
     
-    override init(context: AnyObject?) {
-        super.init(context: context)
+    override func awakeWithContext(context: AnyObject?) {
+        super.awakeWithContext(context)
         
     }
-    
     
     @IBAction func OnPressed() {
         exit(0);
     }
+    
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()

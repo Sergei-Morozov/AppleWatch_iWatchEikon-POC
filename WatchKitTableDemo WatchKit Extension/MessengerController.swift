@@ -11,8 +11,8 @@ import WatchKit
 
 class MessengerController: WKInterfaceController {
     
-    override init(context: AnyObject?) {
-        super.init(context: context)
+    override func awakeWithContext(context: AnyObject?) {
+        super.awakeWithContext(context)
         
     }
     

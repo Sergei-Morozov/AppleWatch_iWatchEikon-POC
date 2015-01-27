@@ -11,9 +11,8 @@ class InterfaceController: WKInterfaceController {
     
     let menu = MenuDataSource().menu
     
-    override init(context: AnyObject?) {
-        super.init(context: context)
-        
+    override func awakeWithContext(context: AnyObject?) {
+        super.awakeWithContext(context)
         loadTableData()
     }
     

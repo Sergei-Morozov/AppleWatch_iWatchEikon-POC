@@ -17,7 +17,7 @@ class MenuInterfaceController: WKInterfaceController {
                 
                 if notificationIdentifier == "readNewsText" {
                     self.pushControllerWithName("readFullText", context:nil);
-                }else if notificationIdentifier == "replyMessenger" {
+                } else if notificationIdentifier == "replyMessenger" {
                     self.pushControllerWithName("messengerSelect", context:nil);
                 }
             }
@@ -25,14 +25,14 @@ class MenuInterfaceController: WKInterfaceController {
     
     
     @IBAction func SettingsTriggered() {
-        self.pushControllerWithName("settingsScreen", context:nil);
-
+//        self.pushControllerWithName("settingsScreen", context:nil);
     }
     
-    override init(context: AnyObject?) {
-        super.init(context: context)
+    override func awakeWithContext(context: AnyObject?) {
+        super.awakeWithContext(context)
         
     }
+    
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
