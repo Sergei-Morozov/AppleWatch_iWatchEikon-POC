@@ -10,47 +10,55 @@
             <objects>
                 <controller title="Settings" id="Yr8-Fj-TBx" customClass="MenuInterfaceController" customModule="WatchKitTableDemo_WatchKit_Extension">
                     <items>
-                        <group width="1" alignment="left" id="JDd-TW-g8M">
+                        <group width="1" alignment="left" id="WjY-V4-x1o">
                             <items>
-                                <button width="60" height="60" alignment="left" backgroundImage="message_button" id="lOO-2n-ZG6">
-                                    <connections>
-                                        <segue destination="qJr-Xr-WIu" kind="push" id="XFu-Sx-P5N"/>
-                                    </connections>
-                                </button>
-                                <button width="60" height="60" alignment="right" backgroundImage="market_button" id="ANc-ZG-dxk"/>
+                                <group alignment="left" layout="vertical" id="JDd-TW-g8M">
+                                    <items>
+                                        <button width="60" height="60" alignment="left" backgroundImage="message_button" id="lOO-2n-ZG6">
+                                            <connections>
+                                                <segue destination="qJr-Xr-WIu" kind="push" id="XFu-Sx-P5N"/>
+                                            </connections>
+                                        </button>
+                                        <label alignment="center" text="Message" id="Eai-Xc-dZP"/>
+                                    </items>
+                                </group>
+                                <group width="66" alignment="right" layout="vertical" id="5Z1-5t-NJp">
+                                    <items>
+                                        <button width="60" height="60" alignment="right" backgroundImage="market_button" id="ANc-ZG-dxk"/>
+                                        <label alignment="center" text="Market" id="pYq-ao-ZkH"/>
+                                    </items>
+                                </group>
                             </items>
                         </group>
-                        <group width="1" height="20" alignment="left" id="5Z1-5t-NJp">
+                        <group width="1" alignment="center" id="aUK-Pa-O9x">
                             <items>
-                                <label alignment="left" text="Message" id="Eai-Xc-dZP"/>
-                                <label alignment="right" text="Market" id="pYq-ao-ZkH"/>
-                            </items>
-                        </group>
-                        <group width="1" alignment="left" id="Q7w-74-VWj">
-                            <items>
-                                <button width="60" height="60" alignment="left" backgroundImage="news_button" id="O1j-TM-bkj">
-                                    <connections>
-                                        <segue destination="QtZ-tn-za3" kind="push" id="p0e-6R-nzb"/>
-                                    </connections>
-                                </button>
-                                <button width="60" height="60" alignment="right" backgroundImage="settings_button" id="0Ht-WO-T42">
-                                    <connections>
-                                        <action selector="SettingsTriggered" destination="Yr8-Fj-TBx" id="51A-KG-EIS"/>
-                                        <segue destination="FZt-dW-CI1" kind="push" id="EYG-I0-dmP"/>
-                                    </connections>
-                                </button>
-                            </items>
-                        </group>
-                        <group width="1" alignment="left" id="k86-1J-QvO">
-                            <items>
-                                <label alignment="right" text="Settings" id="4js-Vy-BMX"/>
-                                <label alignment="left" text="News" id="5Ob-It-9LI"/>
+                                <group alignment="left" layout="vertical" id="Q7w-74-VWj">
+                                    <items>
+                                        <button width="60" height="60" alignment="left" backgroundImage="news_button" id="O1j-TM-bkj">
+                                            <connections>
+                                                <segue destination="QtZ-tn-za3" kind="push" id="p0e-6R-nzb"/>
+                                            </connections>
+                                        </button>
+                                        <label alignment="center" text="Settings" id="4js-Vy-BMX"/>
+                                    </items>
+                                </group>
+                                <group alignment="right" layout="vertical" id="k86-1J-QvO">
+                                    <items>
+                                        <button width="60" height="60" alignment="right" backgroundImage="settings_button" id="0Ht-WO-T42">
+                                            <connections>
+                                                <action selector="SettingsTriggered" destination="Yr8-Fj-TBx" id="51A-KG-EIS"/>
+                                                <segue destination="FZt-dW-CI1" kind="push" id="EYG-I0-dmP"/>
+                                            </connections>
+                                        </button>
+                                        <label alignment="center" text="News" id="5Ob-It-9LI"/>
+                                    </items>
+                                </group>
                             </items>
                         </group>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="82" y="-345"/>
+            <point key="canvasLocation" x="82" y="-345.5"/>
         </scene>
         <!--settingsScreen-->
         <scene sceneID="lu3-hD-peF">
