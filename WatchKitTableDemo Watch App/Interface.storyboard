@@ -65,7 +65,7 @@
             <objects>
                 <controller identifier="settingsScreen" id="FZt-dW-CI1">
                     <items>
-                        <switch width="1" alignment="left" value="YES" id="7J9-P4-eyk">
+                        <switch width="1" alignment="left" value="YES" id="7J9-P4-eyk" userLabel="Chat Status">
                             <string key="title">Chat
 Status</string>
                         </switch>
@@ -137,11 +137,15 @@ Alert</string>
                                 <tableRow identifier="messagerow" id="Va3-h8-jJn">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="V0n-6f-9l9">
                                         <items>
-                                            <label width="1" alignment="left" text="Author" id="ko9-Bf-2JU"/>
+                                            <label width="1" alignment="left" text="Author" id="ko9-Bf-2JU">
+                                                <color key="textColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                            </label>
                                             <label width="1" alignment="left" text="Message" numberOfLines="2" id="Nro-gz-zlU">
-                                                <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                <fontDescription key="font" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
                                             </label>
                                         </items>
+                                        <color key="backgroundColor" red="0.14117647058823529" green="0.14117647058823529" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </group>
                                     <connections>
                                         <segue destination="ZiN-Fd-sV0" kind="push" id="Hew-Md-xFJ"/>
@@ -164,9 +168,41 @@ Alert</string>
         <!--Interface Controller-->
         <scene sceneID="3Ce-WQ-RO1">
             <objects>
-                <controller id="ZiN-Fd-sV0"/>
+                <controller id="ZiN-Fd-sV0">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="MFl-S4-kDg">
+                            <items>
+                                <button alignment="left" id="nQQ-oC-hq7">
+                                    <group key="contentGroup" width="1" alignment="left" id="0Hj-IK-rqg">
+                                        <items>
+                                            <label alignment="right" text="Sorry, I can`t talk right now. I will call back later ..." numberOfLines="0" id="rKh-Ox-opP"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.14117647058823529" green="0.14117647058823529" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
+                                </button>
+                                <button alignment="left" id="89G-3M-3SO">
+                                    <group key="contentGroup" width="1" alignment="left" id="4NO-ml-sps">
+                                        <items>
+                                            <label alignment="center" text="I`m driving. I will call you back later." textAlignment="justified" numberOfLines="0" id="bAy-DC-zWE"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.14117647058823529" green="0.14117647058823529" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
+                                </button>
+                                <button alignment="left" id="RVP-cx-zZ4">
+                                    <group key="contentGroup" width="1" alignment="left" id="8ec-qT-a8k">
+                                        <items>
+                                            <label alignment="center" text="Don`t write me anymore." numberOfLines="0" id="kzw-tC-h9C"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.14117647058823529" green="0.14117647058823529" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
+                                </button>
+                                <button width="1" alignment="left" title="Dismiss" id="nwC-I9-5OD"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="826" y="-344"/>
+            <point key="canvasLocation" x="826" y="-342.25"/>
         </scene>
         <!--News Table View Controller-->
         <scene sceneID="W4T-WC-qQV">
@@ -178,13 +214,25 @@ Alert</string>
                                 <tableRow identifier="newsrow" id="LaI-zP-k8Z" customClass="NewsRow" customModule="WatchKitTableDemo_WatchKit_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="1Qj-Vk-FH2">
                                         <items>
-                                            <label width="1" alignment="left" text="News" numberOfLines="0" id="YEI-Q2-6Rn"/>
-                                            <group width="1" widthAdjustment="-4" alignment="left" id="PBe-nh-YbY"/>
+                                            <label width="1" alignment="left" text="News" numberOfLines="0" id="YEI-Q2-6Rn">
+                                                <color key="textColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                            </label>
+                                            <group width="1" alignment="left" id="PBe-nh-YbY">
+                                                <items>
+                                                    <label width="1" widthAdjustment="-10" alignment="right" text="11:00 AM" id="trA-HE-L7X">
+                                                        <color key="textColor" red="0.49019607843137253" green="0.49019607843137253" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="font" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="11"/>
+                                                    </label>
+                                                </items>
+                                            </group>
                                         </items>
+                                        <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                         <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                                     </group>
                                     <connections>
                                         <outlet property="contentLabel" destination="YEI-Q2-6Rn" id="M9l-G6-3PI"/>
+                                        <outlet property="dateLabel" destination="trA-HE-L7X" id="TRj-28-JDa"/>
                                     </connections>
                                 </tableRow>
                             </items>
@@ -362,7 +410,7 @@ Alert</string>
                     <items>
                         <group width="1" alignment="left" id="Btp-KC-HYM">
                             <items>
-                                <imageView width="30" alignment="left" id="t8F-sF-hzf"/>
+                                <imageView alignment="left" image="home" id="t8F-sF-hzf"/>
                                 <label width="101" height="34" alignment="left" text="Eikon News" textAlignment="right" id="030-t4-QBi">
                                     <color key="textColor" red="1" green="0.63376408080000002" blue="0.100033547" alpha="1" colorSpace="calibratedRGB"/>
                                 </label>
