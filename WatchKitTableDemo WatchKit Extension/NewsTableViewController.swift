@@ -18,12 +18,12 @@ class NewsTableViewController: WKInterfaceController {
     }
     
     func fillTableView() {
-        self.table.setNumberOfRows(4, withRowType: "newsrow");
-        
-        for i in 0..<4 {
-            let row = self.table.rowControllerAtIndex(i) as NewsRow;
-            row.contentLabel?.setText("You can create an embedded.")
-        }
+//        self.table.setNumberOfRows(4, withRowType: "newsrow");
+//        
+//        for i in 0..<4 {
+//            let row = self.table.rowControllerAtIndex(i) as NewsRow;
+//            row.contentLabel?.setText("You can create an embedded.")
+//        }
     }
     
     

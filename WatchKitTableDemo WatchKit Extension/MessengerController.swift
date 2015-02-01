@@ -10,10 +10,11 @@ import WatchKit
 
 
 class MessengerController: WKInterfaceController {
+    @IBOutlet weak var tableView: WKInterfaceTable?
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        
+        fillTableView()
     }
     
     
@@ -29,4 +30,17 @@ class MessengerController: WKInterfaceController {
         super.didDeactivate()
     }
     
+    func fillTableView() {
+        self.tableView?.setRowTypes(["messagerow", "readedmessagerow", "messagerow", "readedmessagerow"])
+//        self.tableView?.setNumberOfRows(4, withRowType: "messagerow");
+//        self.tableView?.setNumberOfRows(4, withRowType: "readedmessagerow");
+        
+//        for i in 0 ..< 4 {
+//            let row = self.tableView?.rowControllerAtIndex(i) as MessageRow;
+//        }
+//        
+//        for i in 0 ..< 4 {
+//            let row = self.tableView?.rowControllerAtIndex(i) as MessageRow;
+//        }
+    }
 }
