@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Yr8-Fj-TBx">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7519.1" systemVersion="14C109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Yr8-Fj-TBx">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7513.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
         <!--Settings-->
@@ -14,7 +14,7 @@
                             <items>
                                 <group alignment="left" layout="vertical" id="JDd-TW-g8M">
                                     <items>
-                                        <button width="60" height="60" alignment="left" backgroundImage="message_button" id="lOO-2n-ZG6">
+                                        <button width="60" height="60" alignment="left" backgroundImage="Message_button" id="lOO-2n-ZG6">
                                             <connections>
                                                 <segue destination="qJr-Xr-WIu" kind="push" id="XFu-Sx-P5N"/>
                                             </connections>
@@ -412,7 +412,7 @@ Alert</string>
                     <items>
                         <label alignment="left" text="News" id="scZ-Dr-Ubt"/>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="News" offsetNotificationContent="NO" id="1pl-du-zFz"/>
+                    <notificationCategory key="notificationCategory" identifier="News" id="1pl-du-zFz"/>
                     <color key="backgroundColor" red="1" green="0.52345767239862506" blue="0.0027472579380547479" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <outlet property="notificationAlertLabel" destination="scZ-Dr-Ubt" id="H5g-MQ-vpi"/>
@@ -429,7 +429,7 @@ Alert</string>
                     <items>
                         <label alignment="left" text="Market" id="X93-fW-Bdg"/>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="Market" offsetNotificationContent="NO" id="J3W-fh-Fa1"/>
+                    <notificationCategory key="notificationCategory" identifier="Market" id="J3W-fh-Fa1"/>
                     <color key="backgroundColor" red="1" green="0.63376408080000002" blue="0.100033547" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <outlet property="notificationAlertLabel" destination="X93-fW-Bdg" id="eM4-Ep-fKw"/>
@@ -446,7 +446,7 @@ Alert</string>
                     <items>
                         <label alignment="left" text="Messenger" id="3kM-ZY-W6S"/>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="Messenger" offsetNotificationContent="NO" id="5gM-dA-hY2"/>
+                    <notificationCategory key="notificationCategory" identifier="Messenger" id="5gM-dA-hY2"/>
                     <color key="backgroundColor" red="1" green="0.63376408080000002" blue="0.100033547" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <outlet property="notificationAlertLabel" destination="3kM-ZY-W6S" id="3mF-pV-GDm"/>
@@ -463,7 +463,7 @@ Alert</string>
                     <items>
                         <label alignment="left" text="Alert Label" id="sGY-zs-QTz"/>
                     </items>
-                    <notificationCategory key="notificationCategory" offsetNotificationContent="NO" id="8mt-hg-fnn"/>
+                    <notificationCategory key="notificationCategory" id="8mt-hg-fnn"/>
                     <connections>
                         <outlet property="notificationAlertLabel" destination="sGY-zs-QTz" id="laQ-0g-hlh"/>
                     </connections>
@@ -569,7 +569,7 @@ Alert</string>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="260" y="1204"/>
+            <point key="canvasLocation" x="311" y="1265"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

@@ -80,6 +80,7 @@
 		0AC400CD1A7E9FBE0010478F /* NewsRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsRow.swift; sourceTree = "<group>"; };
 		0AC400CF1A7E9FD20010478F /* MessageRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
 		0AC400D11A7EA4AF0010478F /* AnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
+		43060B131AA72EB100CD26A4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		463BAAB81A70FBF000AD2D67 /* MenuInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuInterfaceController.swift; sourceTree = "<group>"; };
 		465D9C561A61DBF8009DF581 /* sampleData.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = sampleData.rtf; sourceTree = "<group>"; };
 		46A21F851A645216009E01C9 /* NewsFullController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFullController.swift; sourceTree = "<group>"; };
@@ -242,6 +243,7 @@
 				FAAAD0341A1C28FF00BD2ABA /* Info.plist */,
 				46DA0AB81A5EAE7600E72387 /* PushNotificationPayload.json */,
 				465D9C561A61DBF8009DF581 /* sampleData.rtf */,
+				43060B131AA72EB100CD26A4 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";

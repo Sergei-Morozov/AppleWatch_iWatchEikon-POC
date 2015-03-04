@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
-    func application(application: UIApplication!, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]!, reply: (([NSObject : AnyObject]!) -> Void)!) {
+    func application(application: UIApplication, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?, reply: (([NSObject : AnyObject]!) -> Void)!) {
 
     }
 
@@ -70,7 +70,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Configure other actions and categories and add them to the set...
         var settings = UIUserNotificationSettings(forTypes: (.Alert | .Badge | .Sound),
-            categories: categories)
+            categories: categories as Set<NSObject>)
         
         UIApplication.sharedApplication().registerUserNotificationSettings(settings)
     }

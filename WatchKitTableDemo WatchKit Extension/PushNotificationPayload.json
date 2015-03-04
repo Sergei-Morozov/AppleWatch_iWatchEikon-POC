@@ -1,22 +1,17 @@
-
 {
     "aps": {
-        "alert": "START DESIGNING APPS FOR APPLE WATCH",
+        "alert": "APPLE INC.",
         "title": "",
-        "category": "Messenger"
+        "category": "Market"
     },
-    
+
     "WatchKit Simulator Actions": [
-                                   {
-                                   "title": "Reply with template",
-                                   "identifier": "replyMessenger"
-                                   },
                                    {
                                    "title": "Open in iPhone",
                                    "identifier": "open"
-                                   
+
                                    }
                                    ],
-    
-    "customKey": "MESSENGER"
+
+    "customKey": "MARKET"
 }

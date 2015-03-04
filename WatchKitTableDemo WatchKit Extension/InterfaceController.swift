@@ -22,7 +22,7 @@ class InterfaceController: WKInterfaceController {
         
         for (index, menuName) in enumerate(menu) {
             
-            let row = menuTable.rowControllerAtIndex(index) as MenuTableRowController
+            let row = menuTable.rowControllerAtIndex(index) as! MenuTableRowController
             
             row.interfaceLabel.setText(menuName)
             

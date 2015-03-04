@@ -12,7 +12,7 @@ class MenuDetailInterfaceController: WKInterfaceController {
     
     @IBOutlet weak var interfaceLabel: WKInterfaceLabel!
     
-    override init!() {
+    override init() {
         super.init();
     }
     
