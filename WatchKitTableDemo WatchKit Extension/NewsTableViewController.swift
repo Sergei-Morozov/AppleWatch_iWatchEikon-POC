@@ -18,6 +18,8 @@ class NewsTableViewController: WKInterfaceController {
     }
     
     func fillTableView() {
+        self.table?.setRowTypes(["newsrow", "readednewsrow", "newsrow", "readednewsrow"])
+
 //        self.table.setNumberOfRows(4, withRowType: "newsrow");
 //        
 //        for i in 0..<4 {

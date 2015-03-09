@@ -10,39 +10,46 @@
             <objects>
                 <controller title="Settings" id="Yr8-Fj-TBx" customClass="MenuInterfaceController" customModule="WatchKitTableDemo_WatchKit_Extension">
                     <items>
-                        <group width="1" alignment="left" id="WjY-V4-x1o">
+                        <group alignment="center" id="WjY-V4-x1o">
                             <items>
-                                <group alignment="left" layout="vertical" id="JDd-TW-g8M">
+                                <group alignment="left" layout="vertical" spacing="0.0" id="JDd-TW-g8M">
                                     <items>
-                                        <button width="60" height="60" alignment="left" backgroundImage="Message_button" id="lOO-2n-ZG6">
+                                        <button width="60" height="60" alignment="left" backgroundImage="message_button" id="lOO-2n-ZG6">
                                             <connections>
                                                 <segue destination="qJr-Xr-WIu" kind="push" id="XFu-Sx-P5N"/>
                                             </connections>
                                         </button>
-                                        <label alignment="center" text="Message" id="Eai-Xc-dZP"/>
+                                        <label alignment="center" text="Message" id="Eai-Xc-dZP">
+                                            <color key="textColor" red="0.77180281930000005" green="0.77180281930000005" blue="0.77180281930000005" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                        </label>
                                     </items>
                                 </group>
-                                <group width="66" alignment="right" layout="vertical" id="5Z1-5t-NJp">
+                                <group alignment="right" layout="vertical" spacing="0.0" id="5Z1-5t-NJp">
                                     <items>
                                         <button width="60" height="60" alignment="right" backgroundImage="market_button" id="ANc-ZG-dxk"/>
-                                        <label alignment="center" text="Market" id="pYq-ao-ZkH"/>
+                                        <label alignment="center" text="Market" id="pYq-ao-ZkH">
+                                            <color key="textColor" red="0.77180281930000005" green="0.77180281930000005" blue="0.77180281930000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
                                     </items>
                                 </group>
                             </items>
                         </group>
-                        <group width="1" alignment="center" id="aUK-Pa-O9x">
+                        <group alignment="center" id="aUK-Pa-O9x">
                             <items>
-                                <group alignment="left" layout="vertical" id="Q7w-74-VWj">
+                                <group width="65" alignment="left" layout="vertical" spacing="0.0" id="Q7w-74-VWj">
                                     <items>
                                         <button width="60" height="60" alignment="left" backgroundImage="news_button" id="O1j-TM-bkj">
                                             <connections>
                                                 <segue destination="QtZ-tn-za3" kind="push" id="p0e-6R-nzb"/>
                                             </connections>
                                         </button>
-                                        <label alignment="center" text="News" id="5Ob-It-9LI"/>
+                                        <label alignment="center" text="News" id="5Ob-It-9LI">
+                                            <color key="textColor" red="0.77180281930000005" green="0.77180281930000005" blue="0.77180281930000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
                                     </items>
                                 </group>
-                                <group alignment="right" layout="vertical" id="k86-1J-QvO">
+                                <group alignment="right" layout="vertical" spacing="0.0" id="k86-1J-QvO">
                                     <items>
                                         <button width="60" height="60" alignment="right" backgroundImage="settings_button" id="0Ht-WO-T42">
                                             <connections>
@@ -50,7 +57,9 @@
                                                 <segue destination="FZt-dW-CI1" kind="push" id="EYG-I0-dmP"/>
                                             </connections>
                                         </button>
-                                        <label alignment="center" text="Settings" id="4js-Vy-BMX"/>
+                                        <label alignment="center" text="Settings" id="4js-Vy-BMX">
+                                            <color key="textColor" red="0.77180281930000005" green="0.77180281930000005" blue="0.77180281930000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
                                     </items>
                                 </group>
                             </items>
@@ -65,15 +74,20 @@
             <objects>
                 <controller identifier="settingsScreen" id="FZt-dW-CI1">
                     <items>
-                        <switch width="1" alignment="left" value="YES" id="7J9-P4-eyk" userLabel="Chat Status">
-                            <string key="title">Chat
+                        <group width="1" alignment="left" id="3Kb-Up-GGe">
+                            <items>
+                                <switch width="1" height="52" alignment="left" value="YES" id="7J9-P4-eyk" userLabel="Chat Status">
+                                    <string key="title">Chat
 Status</string>
-                        </switch>
-                        <switch width="1" alignment="left" id="I11-oB-Yzf">
+                                </switch>
+                            </items>
+                        </group>
+                        <switch width="1" height="52" alignment="left" id="I11-oB-Yzf">
                             <string key="title">Manage
 Alert</string>
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </switch>
-                        <switch width="1" alignment="left" value="YES" title="Auto Sign In" id="27a-en-mfN"/>
+                        <switch width="1" height="52" alignment="left" value="YES" title="Auto Sign In" id="27a-en-mfN"/>
                     </items>
                 </controller>
             </objects>
@@ -139,10 +153,11 @@ Alert</string>
                                         <items>
                                             <label width="1" alignment="left" text="Kristen Drivenes" id="ko9-Bf-2JU">
                                                 <color key="textColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <fontDescription key="font" type="system" pointSize="14"/>
                                             </label>
                                             <label width="1" alignment="left" text="ScanMail detected and removed a file that" numberOfLines="2" id="Nro-gz-zlU">
-                                                <fontDescription key="font" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="font" type="system" pointSize="12"/>
                                             </label>
                                         </items>
                                         <color key="backgroundColor" red="0.14117647058823529" green="0.14117647058823529" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -176,8 +191,8 @@ Alert</string>
                     </items>
                     <menu key="menu" id="CHT-pk-uaN">
                         <items>
-                            <menuItem title="Add to Briefcase" icon="add" id="O2n-5e-HFY"/>
-                            <menuItem title="Open in iPhone" icon="accept" id="iCn-oQ-QYb"/>
+                            <menuItem title="Add to Briefcase" image="Briefcase-icon" id="O2n-5e-HFY"/>
+                            <menuItem title="Open in iPhone" image="iPhone-icon" id="iCn-oQ-QYb"/>
                             <menuItem title="Cancel" icon="decline" id="ihb-eU-gvw"/>
                         </items>
                     </menu>
@@ -198,9 +213,9 @@ Alert</string>
                                 <button alignment="center" id="nQQ-oC-hq7">
                                     <group key="contentGroup" width="1" alignment="left" id="0Hj-IK-rqg">
                                         <items>
-                                            <label width="0.90000000000000002" alignment="center" text="Sorry, I can`t talk right now. I will call back later ..." numberOfLines="0" id="rKh-Ox-opP">
+                                            <label width="130" alignment="center" text="Sorry, I can`t talk right now. I will call back later ..." numberOfLines="0" id="rKh-Ox-opP">
                                                 <color key="textColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <fontDescription key="font" type="system" pointSize="13"/>
                                             </label>
                                         </items>
                                         <color key="backgroundColor" red="0.14117647058823529" green="0.14117647058823529" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -212,9 +227,9 @@ Alert</string>
                                 <button alignment="left" id="89G-3M-3SO">
                                     <group key="contentGroup" width="1" alignment="left" id="4NO-ml-sps">
                                         <items>
-                                            <label width="0.90000000000000002" alignment="center" text="I`m driving. I will call you back later." textAlignment="justified" numberOfLines="0" id="bAy-DC-zWE">
+                                            <label width="130" alignment="center" text="I`m driving. I will call you back later." textAlignment="justified" numberOfLines="0" id="bAy-DC-zWE">
                                                 <color key="textColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <fontDescription key="font" type="system" pointSize="13"/>
                                             </label>
                                         </items>
                                         <color key="backgroundColor" red="0.14117647058823529" green="0.14117647058823529" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -226,9 +241,9 @@ Alert</string>
                                 <button alignment="left" id="RVP-cx-zZ4">
                                     <group key="contentGroup" width="1" alignment="left" id="8ec-qT-a8k">
                                         <items>
-                                            <label width="0.90000000000000002" alignment="center" text="Don`t write me anymore." numberOfLines="0" id="kzw-tC-h9C">
+                                            <label width="130" alignment="center" text="Don`t write me anymore." numberOfLines="0" id="kzw-tC-h9C">
                                                 <color key="textColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <fontDescription key="font" type="system" pointSize="13"/>
                                             </label>
                                         </items>
                                         <color key="backgroundColor" red="0.14117647058823529" green="0.14117647058823529" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -250,27 +265,27 @@ Alert</string>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="826" y="-343"/>
+            <point key="canvasLocation" x="826" y="-344"/>
         </scene>
-        <!--News Table View Controller-->
+        <!--photo-01-->
         <scene sceneID="W4T-WC-qQV">
             <objects>
-                <controller id="QtZ-tn-za3" customClass="NewsTableViewController" customModule="WatchKitTableDemo_WatchKit_Extension">
+                <controller backgroundImage="photo-01" id="QtZ-tn-za3" customClass="NewsTableViewController" customModule="WatchKitTableDemo_WatchKit_Extension">
                     <items>
                         <table alignment="left" id="AQa-Ny-3FV">
                             <items>
                                 <tableRow identifier="newsrow" id="9ok-G0-unf" customClass="NewsRow" customModule="WatchKitTableDemo_WatchKit_Extension">
-                                    <group key="rootItem" width="1" alignment="left" layout="vertical" id="PBn-Gt-0bN">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="PBn-Gt-0bN">
                                         <items>
-                                            <label width="1" alignment="left" text="News" numberOfLines="0" id="eO6-HG-bLm">
-                                                <color key="textColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                            <label width="1" alignment="left" text="Reuters photo win big at the Atlanta Photojournalism" numberOfLines="0" id="eO6-HG-bLm">
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="font" type="system" pointSize="14"/>
                                             </label>
                                             <group width="1" alignment="left" id="ZPu-i4-tjk">
                                                 <items>
                                                     <label width="1" alignment="right" text="11:00 AM" id="LOw-nH-hdJ">
                                                         <color key="textColor" red="0.49019607840000001" green="0.49019607840000001" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="font" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="11"/>
+                                                        <fontDescription key="font" type="system" pointSize="12"/>
                                                     </label>
                                                 </items>
                                             </group>
@@ -282,17 +297,17 @@ Alert</string>
                                     </connections>
                                 </tableRow>
                                 <tableRow identifier="readednewsrow" id="YCx-Wn-aUy" customClass="NewsRow" customModule="WatchKitTableDemo_WatchKit_Extension">
-                                    <group key="rootItem" width="1" alignment="left" alpha="0.75" layout="vertical" id="mz9-Hh-PTB">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" alpha="0.75" layout="vertical" id="mz9-Hh-PTB">
                                         <items>
-                                            <label width="1" alignment="left" alpha="0.20000000000000001" text="News" numberOfLines="0" id="Gxw-a3-uKb">
+                                            <label width="1" alignment="left" alpha="0.20000000000000001" text="Reuters Brand Conten Solutions" numberOfLines="0" id="Gxw-a3-uKb">
                                                 <color key="textColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <fontDescription key="font" type="system" pointSize="14"/>
                                             </label>
                                             <group width="1" alignment="left" id="wQ4-cy-CnG">
                                                 <items>
                                                     <label width="1" alignment="right" alpha="0.20000000000000001" text="11:00 AM" id="LyI-7L-UAx">
                                                         <color key="textColor" red="0.49019607840000001" green="0.49019607840000001" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="font" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="11"/>
+                                                        <fontDescription key="font" type="system" pointSize="12"/>
                                                     </label>
                                                 </items>
                                             </group>
@@ -308,12 +323,12 @@ Alert</string>
                     </items>
                     <menu key="menu" id="Bu4-Fx-FIp">
                         <items>
-                            <menuItem title="Add to Briefcase" icon="add" id="5dj-Md-fj2">
+                            <menuItem title="Add to Briefcase" image="Briefcase-icon" id="5dj-Md-fj2">
                                 <connections>
                                     <action selector="addToBriefcase" destination="QtZ-tn-za3" id="xo2-bO-wdY"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Open in iPhone" icon="accept" id="3vJ-pD-U3c">
+                            <menuItem title="Open in iPhone" image="iPhone-icon" id="3vJ-pD-U3c">
                                 <connections>
                                     <action selector="openInIphone" destination="QtZ-tn-za3" id="Hp6-J1-J4J"/>
                                 </connections>
@@ -339,7 +354,9 @@ Alert</string>
                     <items>
                         <group width="1" height="105" alignment="left" backgroundImage="MessegeSentBack" id="bKB-6U-y0b">
                             <items>
-                                <label width="1" widthAdjustment="-8" height="1" alignment="right" text="Your message has been sent" textAlignment="left" numberOfLines="2" id="utu-zX-CSf"/>
+                                <label width="103" height="1" alignment="center" text="Your message has been sent" textAlignment="left" numberOfLines="2" id="utu-zX-CSf">
+                                    <fontDescription key="font" type="system" pointSize="16"/>
+                                </label>
                             </items>
                         </group>
                         <button width="1" alignment="left" title="Dismiss" id="Xsp-q3-O8X">
@@ -362,7 +379,9 @@ Alert</string>
                                 <button alignment="left" id="P2W-r7-alw">
                                     <group key="contentGroup" width="1" height="1" alignment="left" backgroundImage="MessegeBackground" id="dAf-8N-cnz">
                                         <items>
-                                            <label width="1" widthAdjustment="-10" height="1" alignment="right" text="Sorry, I can’t talk now. I'll call back" numberOfLines="2" id="RVC-tW-W8r"/>
+                                            <label width="1" widthAdjustment="-10" height="1" alignment="right" text="Sorry, I can’t talk now. I'll call back" numberOfLines="2" id="RVC-tW-W8r">
+                                                <fontDescription key="font" type="system" pointSize="14"/>
+                                            </label>
                                         </items>
                                     </group>
                                     <connections>
@@ -376,7 +395,9 @@ Alert</string>
                                 <button alignment="left" id="D5f-44-UU4">
                                     <group key="contentGroup" width="1" height="1" alignment="left" backgroundImage="MessegeBackground" id="hkH-9H-hWh">
                                         <items>
-                                            <label width="1" widthAdjustment="-10" height="1" alignment="right" text="I’m driving. I will call you back later." numberOfLines="2" id="8Ex-oK-lPp"/>
+                                            <label width="1" widthAdjustment="-10" height="1" alignment="right" text="I’m driving. I will call you back later." numberOfLines="2" id="8Ex-oK-lPp">
+                                                <fontDescription key="font" type="system" pointSize="14"/>
+                                            </label>
                                         </items>
                                     </group>
                                     <connections>
@@ -390,7 +411,9 @@ Alert</string>
                                 <button alignment="left" id="5gA-B0-aiD">
                                     <group key="contentGroup" width="1" height="1" alignment="left" backgroundImage="MessegeBackground" id="wwl-XU-nZm">
                                         <items>
-                                            <label width="1" widthAdjustment="-10" height="1" alignment="right" text="Don't write me anymore." numberOfLines="2" id="BTZ-NC-3Vk"/>
+                                            <label width="1" widthAdjustment="-10" height="1" alignment="right" text="Don't write me anymore." numberOfLines="2" id="BTZ-NC-3Vk">
+                                                <fontDescription key="font" type="system" pointSize="14"/>
+                                            </label>
                                         </items>
                                     </group>
                                     <connections>
@@ -399,11 +422,11 @@ Alert</string>
                                 </button>
                             </items>
                         </group>
-                        <imageView width="51" height="51" alignment="center" image="closeImage" id="9OB-NR-mcU"/>
+                        <imageView width="39" height="35" alignment="center" image="closeImage" id="9OB-NR-mcU"/>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="224" y="160.5"/>
+            <point key="canvasLocation" x="224" y="152.5"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="dNA-Bc-hI7">
@@ -474,24 +497,28 @@ Alert</string>
         <!--readFullText-->
         <scene sceneID="Vh3-iN-TdI">
             <objects>
-                <controller identifier="readFullText" backgroundImage="NewsNotificationImage" id="gkb-t8-dCj" customClass="FullNewsInterfaceController" customModule="WatchKitTableDemo_WatchKit_Extension">
+                <controller identifier="readFullText" backgroundImage="photo-02" id="gkb-t8-dCj" customClass="FullNewsInterfaceController" customModule="WatchKitTableDemo_WatchKit_Extension">
                     <items>
                         <group width="1" alignment="left" id="Btp-KC-HYM">
                             <items>
                                 <imageView alignment="left" image="home" id="t8F-sF-hzf"/>
                                 <label width="101" height="34" alignment="left" text="Eikon News" textAlignment="right" id="030-t4-QBi">
                                     <color key="textColor" red="1" green="0.63376408080000002" blue="0.100033547" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="heavy" pointSize="16"/>
                                 </label>
                             </items>
                         </group>
-                        <label width="136" height="59" alignment="left" text="Start Designing Apps for Apple Watch " numberOfLines="0" id="iYW-1m-51v">
-                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        <group width="1" alignment="left" id="rjA-hq-tEP"/>
+                        <label width="136" alignment="left" text="START DESIGNING APPS FOR APPLE WATCH " numberOfLines="0" id="iYW-1m-51v">
+                            <fontDescription key="font" type="boldSystem" pointSize="13"/>
                         </label>
                         <label width="136" alignment="left" text="11 Dec. 2014  10:01" id="YuT-hR-71i">
-                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" type="system" pointSize="10"/>
                         </label>
                         <label alignment="left" numberOfLines="0" id="1WE-Nv-Rr5">
                             <string key="text">Developers can create notifications that allow users to take action or get information about what happened in usuall world and many other usefull words</string>
+                            <fontDescription key="font" type="system" pointSize="12"/>
                         </label>
                         <button width="1" alignment="left" title="Read in the iPhone" id="jdP-wi-xrr"/>
                         <button width="1" alignment="left" title="Dismiss" id="bT1-BY-C8l">
@@ -504,20 +531,23 @@ Alert</string>
             </objects>
             <point key="canvasLocation" x="48" y="270"/>
         </scene>
-        <!--NewsNotificationImage-->
+        <!--photo-02-->
         <scene sceneID="hK4-M3-PFh">
             <objects>
-                <controller backgroundImage="NewsNotificationImage" contentMode="scaleAspectFill" id="TDL-5k-CZZ" customClass="NewsNotificationController" customModule="WatchKitTableDemo_WatchKit_Extension">
+                <controller backgroundImage="photo-02" contentMode="scaleAspectFill" id="TDL-5k-CZZ" customClass="NewsNotificationController" customModule="WatchKitTableDemo_WatchKit_Extension">
                     <items>
-                        <imageView width="136" height="70" alignment="left" hidden="YES" image="NewsNotificationImage" contentMode="scaleAspectFill" id="Je5-oY-8Ux"/>
+                        <imageView width="136" height="70" alignment="left" hidden="YES" image="photo-01" contentMode="scaleAspectFill" id="Je5-oY-8Ux"/>
                         <label width="136" height="34" alignment="left" id="vB5-2P-2ur"/>
-                        <label width="136" height="59" alignment="left" text="Start Designing Apps for Apple Watch " numberOfLines="0" id="Yxb-E6-Njn">
-                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        <label width="1" alignment="left" text="START DESIGNING APPS FOR APPLE WATCH " numberOfLines="0" id="Yxb-E6-Njn">
+                            <fontDescription key="font" type="boldSystem" pointSize="13"/>
                         </label>
                         <label width="136" alignment="left" text="11 Dec. 2014  10:01" id="q5r-br-oZ6">
-                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" type="system" pointSize="10"/>
                         </label>
-                        <label alignment="left" text="Developers can create notifications that allow users to take action or get information about what happened in usuall world" numberOfLines="6" id="XkA-6F-hhC"/>
+                        <label alignment="left" text="Developers can create notifications that allow users to take action or get information about what happened in usuall world" numberOfLines="6" id="XkA-6F-hhC">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                        </label>
                     </items>
                     <color key="backgroundColor" red="1" green="0.6337640807597904" blue="0.1000335469627639" alpha="1" colorSpace="calibratedRGB"/>
                 </controller>
@@ -551,25 +581,29 @@ Alert</string>
             </objects>
             <point key="canvasLocation" x="254" y="960"/>
         </scene>
-        <!--News Notification Controller-->
+        <!--photo-01-->
         <scene sceneID="mcQ-Lo-GLY">
             <objects>
-                <controller id="OJ0-f9-yRD" customClass="NewsNotificationController" customModule="WatchKitTableDemo_WatchKit_Extension">
+                <controller backgroundImage="photo-01" id="OJ0-f9-yRD" customClass="NewsNotificationController" customModule="WatchKitTableDemo_WatchKit_Extension">
                     <items>
-                        <label width="136" height="25" alignment="left" text="PAUL DONCASTER" numberOfLines="0" id="bf3-tV-2NN">
-                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        <label width="136" alignment="left" text="PAUL DONCASTER" numberOfLines="0" id="bf3-tV-2NN">
+                            <fontDescription key="font" type="boldSystem" pointSize="14"/>
                         </label>
                         <label width="136" alignment="left" text="20 MINUTES AGO" id="G2d-wY-S9Y">
-                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" type="system" pointSize="10"/>
                         </label>
-                        <label alignment="left" text="Favorite Time of Year - Tyler Straub. Did you heard this melody?" numberOfLines="6" id="KTh-0g-0cg"/>
+                        <label alignment="left" text="Favorite Time of Year - Tyler Straub. Did you heard this melody?" numberOfLines="6" id="KTh-0g-0cg">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                        </label>
                         <label alignment="left" text="youtube.be/DDVKSD232" id="Rs2-fU-oTj">
-                            <color key="textColor" red="0.13022584244184041" green="0.51191188417436773" blue="0.91835088315217395" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="0.10260871313502354" green="0.42085366927755491" blue="0.76326345755693581" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="15"/>
                         </label>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="311" y="1265"/>
+            <point key="canvasLocation" x="311" y="1260"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

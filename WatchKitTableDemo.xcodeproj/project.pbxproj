@@ -11,6 +11,7 @@
 		0AC400CE1A7E9FBE0010478F /* NewsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC400CD1A7E9FBE0010478F /* NewsRow.swift */; };
 		0AC400D01A7E9FD20010478F /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC400CF1A7E9FD20010478F /* MessageRow.swift */; };
 		0AC400D21A7EA4AF0010478F /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC400D11A7EA4AF0010478F /* AnswerViewController.swift */; };
+		462ACAF91AAE46F600FC6190 /* roboto in Resources */ = {isa = PBXBuildFile; fileRef = 462ACAF81AAE46F600FC6190 /* roboto */; };
 		463BAAB91A70FBF000AD2D67 /* MenuInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463BAAB81A70FBF000AD2D67 /* MenuInterfaceController.swift */; };
 		465D9C571A61DBF8009DF581 /* sampleData.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 465D9C561A61DBF8009DF581 /* sampleData.rtf */; };
 		46A21F861A645216009E01C9 /* NewsFullController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A21F851A645216009E01C9 /* NewsFullController.swift */; };
@@ -81,6 +82,7 @@
 		0AC400CF1A7E9FD20010478F /* MessageRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
 		0AC400D11A7EA4AF0010478F /* AnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
 		43060B131AA72EB100CD26A4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		462ACAF81AAE46F600FC6190 /* roboto */ = {isa = PBXFileReference; lastKnownFileType = folder; path = roboto; sourceTree = "<group>"; };
 		463BAAB81A70FBF000AD2D67 /* MenuInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuInterfaceController.swift; sourceTree = "<group>"; };
 		465D9C561A61DBF8009DF581 /* sampleData.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = sampleData.rtf; sourceTree = "<group>"; };
 		46A21F851A645216009E01C9 /* NewsFullController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFullController.swift; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 				FA2EE1E91A1CD0AA00E57EF5 /* MenuDetailInterfaceController.swift */,
 				FAAAD0501A1C2F5E00BD2ABA /* MenuTableRowController.swift */,
 				46A21F871A6456F3009E01C9 /* MessengerController.swift */,
+				462ACAF81AAE46F600FC6190 /* roboto */,
 				46A21F891A646534009E01C9 /* MessengeSentController.swift */,
 				FAAAD0371A1C28FF00BD2ABA /* Images.xcassets */,
 				FAAAD0331A1C28FF00BD2ABA /* Supporting Files */,
@@ -406,6 +409,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				462ACAF91AAE46F600FC6190 /* roboto in Resources */,
 				465D9C571A61DBF8009DF581 /* sampleData.rtf in Resources */,
 				FAAAD03C1A1C28FF00BD2ABA /* WatchKitTableDemo Watch App.app in Resources */,
 				FAAAD0381A1C28FF00BD2ABA /* Images.xcassets in Resources */,

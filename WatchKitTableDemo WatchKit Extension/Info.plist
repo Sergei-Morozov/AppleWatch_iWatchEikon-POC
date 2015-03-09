@@ -36,5 +36,9 @@
 	</dict>
 	<key>RemoteInterfacePrincipalClass</key>
 	<string>$(PRODUCT_MODULE_NAME).InterfaceController</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string></string>
+	</array>
 </dict>
 </plist>
